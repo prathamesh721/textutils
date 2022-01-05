@@ -10,8 +10,8 @@ function App() {
     <>
       <Navbar title = "textUtils2" menuText = "About Us"/>
      
-      <About/>
-      {/*<TextForm heading="Enter the text to analyse" />*/}
+      {/*<About/>*/}
+      {<TextForm heading="Enter the text to analyse" />}
     </>
   );
 }
