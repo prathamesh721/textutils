@@ -40,6 +40,7 @@ export default function TextForm(props) {
             <h4>{props.heading}</h4>
           </label>
           <textarea
+            style={{backgroundColor: props.mode === 'light'?'white':'pink'}}
             className="form-control"
             id="mybox"
             rows="10"
@@ -67,7 +68,7 @@ export default function TextForm(props) {
           <p> {text.split(" ").length} words and {text.length} characters</p>
           <p> Time to read these words in Minutes = {0.08 * text.split(" ").length}</p>
           <h5>Preview</h5>
-          <p>{text}</p>
+          <p>{text.length>0?text:"Enter something to preview it here"}</p>
         </div>
       </div>
     </div>
